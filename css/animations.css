@@ -1,0 +1,52 @@
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+    background-color: var(--primary-black);
+  }
+  50% {
+    background-position: 100% 50%;
+    background-color: var(--primary-green);
+  }
+  100% {
+    background-position: 0% 50%;
+    background-color: var(--primary-black);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-card {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.testimonial-slide {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.testimonial-slide.active {
+  opacity: 1;
+  transform: translateY(0);
+}
