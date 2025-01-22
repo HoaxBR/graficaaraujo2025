@@ -1,0 +1,1 @@
+# graficaaraujo2025
